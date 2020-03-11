@@ -3,8 +3,8 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# cities = City.create([{ name: 'Chicago' , :director => ''}, { name: 'Copenhagen' }])
+# Mayor.create(name: 'Emanuel', city: cities.first)
 
 movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992', :director => 'Guy Ritchie'},
 {:title => 'The Terminator', :rating => 'R', :release_date => '26-Oct-1984', :director => 'James Cameron'},
@@ -21,5 +21,5 @@ movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992', 
 ]
 
 movies.each do |movie|
-  Movie.create!(movie)
+Movie.create!(movie)
 end
